@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <title>Assignment 6 &laquo; Data Visualization Dashboard&raquo;</title>
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
-        <link rel="stylesheet" href="main.css"/>
-        <!--Feel free to add more CSS files as needed-->
-        <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    <meta charset="utf-8">
+    <title>Assignment 6 &laquo; Data Visualization Dashboard&raquo;</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="main.css"/>
+    <!--Feel free to add more CSS files as needed-->
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="d3-tip.js"></script>
-<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
-    </head>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
+</head>
 <body>
-    <div class="header">
-        <h3>Football Statistics</h3>
-        <h5>Tracking the best countries of the 21st century</h5>
-    </div>
+<div class="header">
+    <h3>Football Statistics</h3>
+    <h5>Tracking the best countries of the 21st century</h5>
+</div>
 
-    <div class="center">
-        <label id="yearLabel" for="year">Set Year:</label>
-        <input id="year" type="text" class="span2"
-               data-slider-min="2010" data-slider-max="2020" data-slider-step="1"
-               data-slider-value="[2019,2020]"/>
-    </div>
-    <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
-    <div class="row">
-        <div class="col-lg-6">
-            <div id="graph1"></div>
-            <div id="graph2"></div><br/>
+<!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
+<div class="row">
+    <div class="col-lg-6">
+        <div class="center">
+            <label id="yearLabel" for="year">Set Year:</label>
+            <input id="year" type="text" class="span2"
+                   data-slider-min="2000" data-slider-max="2019" data-slider-step="1"
+                   data-slider-value="[2010,2019]"/>
         </div>
-        <div class="col-lg-6">
-            <div id="graph3"></div>
-        </div>
+        <div id="graph1"></div>
+        <div id="graph2"></div>
+        <br/>
     </div>
-    <!--Feel free to add more JavaScript files as needed-->
-    <script type="text/javascript" src="main.js"></script>
+    <div class="col-lg-6">
+        <label id="graph3Label" for="year">Winning Percentages by Nation</label>
+        <div id="graph3"></div>
+    </div>
+</div>
+<!--Feel free to add more JavaScript files as needed-->
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
