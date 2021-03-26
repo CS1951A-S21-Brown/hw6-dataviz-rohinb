@@ -1,6 +1,51 @@
-.header {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+html {
+    /*overflow-x1: hidden;*/
+}
+
+html, body, text, button, label, h3, h5 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+button:focus {
+    outline: 0 !important;
+}
+svg {
+    display: block;
+    margin: 0 auto;
+    font: 10px sans-serif;
+}
+
+body {
+}
+
+text {
+    font-size: 10px;
+}
+
+path {
+    fill: none;
+    stroke: #aaa;
+}
+
+
+#y_bar_label > .domain {
+    display: none;
+}
+
+.col-lg-6 {
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .header > h3, h5 {
@@ -9,4 +54,129 @@
     text-align: center;
 }
 
-/* Include any custom CSS styling here! */
+.row {
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 1px 5px #969696;
+}
+
+.tooltip {
+    position: absolute;
+    font-size: 13px;
+    min-width: 100px;
+    padding: 10px;
+    pointer-events: none;
+    background-color: white;
+    /*font-weight: bold;*/
+    text-align: center;
+    border-radius: 5px;
+}
+
+.links line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+}
+
+.nodes circle {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.controls > button {
+    margin: 0 20px;
+}
+
+.focus line {
+    stroke: rgb(255, 0, 0);
+    stroke-dasharray: 1,1;
+    shape-rendering: crispEdges;
+}
+
+#attrInput {
+    width: 100px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#yearLabel {
+    padding: 0 30px;
+}
+
+rect[id^=rect-]:hover {
+    cursor: pointer;
+}
+
+    /* Tooltip CSS */
+    .d3-tip {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family:"avenir next", Arial, sans-serif;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFA500;
+    border-radius: 1px;
+    pointer-events: none;
+    }
+
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 8px;
+      width: 100%;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      pointer-events: none;
+
+    }
+
+    /* Northward tooltips */
+    .d3-tip.n:after {
+      content: "\25BC";
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+      text-align: center;
+    }
+
+    /* Eastward tooltips */
+    .d3-tip.e:after {
+      content: "\25C0";
+      margin: -4px 0 0 0;
+      top: 50%;
+      left: -8px;
+    }
+
+    /* Southward tooltips */
+    .d3-tip.s:after {
+      content: "\25B2";
+      margin: 0 0 1px 0;
+      top: -8px;
+      left: 0;
+      text-align: center;
+    }
+
+    /* Westward tooltips */
+    .d3-tip.w:after {
+      content: "\25B6";
+      margin: -4px 0 0 -1px;
+      top: 50%;
+      left: 100%;
+    }
+
+/*    text{
+      pointer-events:none;
+    }*/
+
+    .details{
+      color:white;
+    }
