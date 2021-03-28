@@ -39,6 +39,71 @@
         <div id="graph3"></div>
     </div>
 </div>
+
+<div class="written">
+    <p>
+        Written Questions:
+        <br>
+        1. In the top left graph, I show my boss the total number of football games played each year with a bar chart. My
+        boss can
+        adjust which years they want to see with the slider. In the map graph on the right, I show the winning percentages
+        of each nation.
+        I filter out nations with very few games in the data set. The top 10 nations are colored red, while other nations
+        are colored
+        a shade of purple based on their winning percentage (higher is darker). Gray nations have no or very little data. My
+        boss can hover over nations to see their winning percentages.
+        The last two world cups with data in the dataset (2018 and 2019) is shown in the bottom left. I chose to show total
+        number
+        of wins because I feel like that was the best metric to show performance in both world cups. Since teams that make
+        it further
+        in the world cup play more games, I felt like this was a better metric than winning percentage or average strength
+        of victory.
+        To have more data, I included wins in World Cup Qualification matches.
+        <br>
+        2. D3 was helpful to me because: it provided a lot of graphing utility for me so I mainly had to focus on processing
+        the data
+        without having to worry about the graphing UI very much. It also has very easy color functionality with
+        brighter/darker
+        methods to convert colors (like I did in my map chart). It also does very smart and intuitive scaling and animation
+        of the
+        graphs in the webpage and size of the window.
+        <br>
+        3. D3 might not have been the best visualization tool because I didn't necessarily need a web page to show my
+        visualizations.
+        I could have simply done the graphs locally on my machine, perhaps with some python graphing library. This brings me
+        to my second reason, data processing/sorting is a little less convenient to do in javascript (compared to something
+        like python)
+        even though D3 has excellent utility methods. D3 also has pretty big potential functionality and customizability,
+        but
+        lacks default, automated visualization that a lot of lighter-weight non-web libraries offer, like matplotlib+pandas.
+        This made
+        me have to explicitly do everything which is good for customizability but may not be the best if I'm trying to
+        make a deadline and simply need graphs.
+        <br>
+        4. My map chart on the right may be hard to use for someone physically impaired and using assistive technologies
+        because in order to show the winning percentages of each country, it required that they hover over each country.
+        Spotting the top 10 countries on the map should still be easy because of their bright red color, but of course,
+        seeing the exact winning percentage would still need a hover. For a color blind user, they may not pick up the
+        differences in shade of purple, but this is a much less important part of the graph and they should still be able to hover.
+        My two bar charts should be pretty accessible to most because I chose to show the counts next to each bar. Also,
+        I use significant padding between the bars. Also the bars are on a solid white background providing significant contrast.
+        There is no hover component that would prevent users using assistive technologies from interacting. The font sizes
+        may be too small in some areas of the dashboard however, preventing visually impaired users from fully reading
+        the labels. The slider in the top left may be hard to manipulate for users using assistive technologies because it
+        is double-ended and in general sliders are not recommended for accessibility (according to the betterment article).
+        <br>
+        5. When deciding to use a hover component in the map, an alternative I could think of was displaying numbers on
+        each country, but I decided that would quickly become too compact to read, and some countries are quite small. As
+        far as font size goes, I felt like I had to use those font sizes to fit all of that data on a single page dashboard that
+        the assignment demanded, but a more accessible thing to do could have been a longer scrollable dashboard with perhaps
+        multiple pages. I considered using a dropdown for the top left graph instead of a slider, but then decided that
+        I'd want my boss to have more control of the granularity. Also, the dropdown, while easier to use with assistive
+        technology (according to the betterment article), does not give the user the ability to select different sizes of
+        ranges, though I could have built a more complicated interface if I wanted to optimize for this physically impaired
+        target audience.
+    </p>
+</div>
+
 <!--Feel free to add more JavaScript files as needed-->
 <script type="text/javascript" src="main.js"></script>
 </body>
